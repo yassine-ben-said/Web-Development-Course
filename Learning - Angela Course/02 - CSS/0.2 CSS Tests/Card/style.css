@@ -1,0 +1,48 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    color : darkblue;
+    height : 1000px;
+}
+
+.navbar{
+    position : sticky;
+    top : O;
+
+    background-color: navajowhite;
+    padding : 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card{
+    position : relative;
+    background-color: lightcyan;
+    width : 350px;
+    height : 150px;
+    border : 3px solid black;
+    padding: 3px 20px;
+    border-radius: 10px;
+    margin : 10px;
+}
+
+.badge{
+    position : absolute;
+    top : 10px;
+    right : 10px;
+    background-color: lightgreen;
+    padding : 7px;
+    border-radius: 20px;
+}
+
+/* Fixed Position */
+.contact-button{
+    position : fixed;
+    bottom : 20px;
+    right : 20px;
+
+    background-color: crimson;
+    color : white;
+    padding : 10px;
+    border : none;
+    border-radius: 10px;  
+}

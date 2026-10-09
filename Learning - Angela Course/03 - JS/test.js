@@ -39,7 +39,7 @@ function LeapYear(year) {
 }
 // LeapYear(2000)
 
-
+// =================================================
 // Assigment N°05
 function DoesItExist(guestList, guestName){
     if (guestList.includes(guestName)){
@@ -58,6 +58,7 @@ function DoesItExist(guestList, guestName){
 //     console.log("Sorry, Your're not invited to this party. Maybe next time !")
 // }
 
+// =================================================
 // Assigment N°06
 function fizzBuzz()  {
     if (output.length == 0) {
@@ -79,7 +80,7 @@ function fizzBuzz()  {
 
 
 
-// =======================
+// =================================================
 // Assigment N°07
 function whoIsGoingToPay(names) {
     var randomNamePosition = Math.random() * names.length;
@@ -90,7 +91,7 @@ function whoIsGoingToPay(names) {
 // var names = ["Angela", "Ben", "Jenny", "Michael", "Chloe"];
 // console.log(whoIsGoingToPay(names));
 
-
+// =================================================
 // Assigment N°08
 function fibonacciGenerator(n){
     fibList[0] = 0;
