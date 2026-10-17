@@ -1,0 +1,69 @@
+body {
+      font-family: 'Sono', sans-serif;
+    }
+
+/*All good*/
+.pricing-container{ 
+    display:flex; /*good*/
+    gap : 20px; /*good ++-*/
+    height : 100vh;/*good*/
+    justify-content: center; /*good*/
+    align-items : center;/*good*/
+}
+
+/* All good +++- */
+.pricing-plan{
+    background-color : #f2f2f2; /*good*/
+    /* flex-basis : 25%;  good ---- */
+    flex : 1; /* Added */
+    max-width : 400px;
+    text-align: center; /*good*/
+    padding : 20px;/*good*/
+    border-radius: 5px; /*good*/
+}
+
+/*All good ++++ */
+.plan-button{
+    background-color: #ff6600;/*good*/
+    padding: 10px; /*good*/
+    color : white; /*good*/
+    border : none;/*good*/
+    border-radius : 5px;/*good*/
+}
+
+/*All good ++-*/
+.plan-title{
+    font-size : 1.5rem;/*good 48px*/ 
+    font-weight: bold; /*good*/
+    margin-bottom: 10px; /* Added*/
+}
+
+/*All good ++-*/
+.plan-price {
+    font-size : 3rem; /*good 48px*/ 
+    font-weight: bold; /*good*/
+    margin-bottom: 10px; /* Added*/
+}
+
+
+
+/*All good ++-*/
+.plan-features{
+    list-style: none; /*good*/
+    padding:0; /* Added */
+    margin : 0; /* Added */
+}
+
+/*All good ++-*/
+.plan-features li {
+    padding : 10px; /*good*/
+}
+/* Hint: What can you do with a media query and flexbox? */
+@media (max-width: 1250px) {
+    .pricing-container{
+        flex-direction : column;
+        height : 100%;
+    }
+
+}
+    
