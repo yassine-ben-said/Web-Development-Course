@@ -8,11 +8,24 @@
 
 // Refactoring 
 
-
+// Detecting Button Press
 for ( let i = 0; i<document.querySelectorAll(".drum").length ;i++){
     document.querySelectorAll(".drum")[i].addEventListener("click", function () {
         let btnInnerHTML = this.innerHTML;
-        switch (btnInnerHTML) {
+        makeSound(btnInnerHTML);
+        buttonAnimation(btnInnerHTML);
+    })
+}
+
+// Detecting Keyboard Press
+document.addEventListener("keydown", function(event) {
+    makeSound(event.key);
+    buttonAnimation(event.key);
+})
+
+
+function makeSound(key) {
+    switch (key) {
             case "w" :
                 let tom1 = new Audio("sounds/tom-1.mp3");
                 tom1.play();
@@ -49,8 +62,17 @@ for ( let i = 0; i<document.querySelectorAll(".drum").length ;i++){
                 break;
             
             default : 
-                console.log(btnInnerHTML + "unkwon beat !")
+                console.log(key + " unkwon beat !")
 
         }
-    })
+}
+
+function buttonAnimation(currentKey) {
+
+    let activeButton = document.querySelector("." + currentKey);
+    activeButton.classList.add("pressed");
+    setTimeout(function() {
+        activeButton.classList.remove("pressed");
+    },150)
+
 }
