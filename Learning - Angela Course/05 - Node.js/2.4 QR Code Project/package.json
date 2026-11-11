@@ -1,0 +1,17 @@
+{
+  "name": "2.4-qr-code-project",
+  "version": "1.0.0",
+  "description": "[Project] Generating a QR Code for any URL",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Yassine Ben Said",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^8.2.6",
+    "qr-image": "^3.2.0"
+  }
+}
