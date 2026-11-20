@@ -18,7 +18,7 @@ app.get("/" ,(req,res) => {
 // Custom Middleware
 function checkAccess(req,res,next) {
     const password = req.body.password;
-    if (password === "ILoveProgramming") {
+    if (password === "ILoveProgrammingComplexStuff") {
         next();
     }
     else {
